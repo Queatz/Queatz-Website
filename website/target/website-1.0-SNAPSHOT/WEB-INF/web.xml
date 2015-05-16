@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
-	<servlet>   
-	    <servlet-name>snappy</servlet-name>
-	    <jsp-file>/snappy/index.html</jsp-file>
-	</servlet>
-	<servlet-mapping>   
-	    <servlet-name>snappy</servlet-name>
-	    <url-pattern>/snappy</url-pattern>
-	</servlet-mapping>
+
+    <servlet>
+        <servlet-name>bounties-api</servlet-name>
+        <servlet-class>com.queatz.website.Servlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>bounties-api</servlet-name>
+        <url-pattern>/bounties-api/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>snappy</servlet-name>
+        <jsp-file>/snappy/index.html</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>snappy</servlet-name>
+        <url-pattern>/snappy</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>bounties</servlet-name>
+        <jsp-file>/bounties/index.html</jsp-file>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>bounties</servlet-name>
+        <url-pattern>/bounties</url-pattern>
+    </servlet-mapping>
+
 </web-app>
